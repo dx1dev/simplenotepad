@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Notepad</title>
-    <link rel="icon" href="assets/img/icon.png">
+    <link rel="icon" href="assets/img/notepad_icon.png">
 
-    <link rel="stylesheet" href="notepad.css">
+    <link rel="stylesheet" href="assets/styles/notepad.css">
     
     <!-- components -->
     <link rel="stylesheet" href="assets/components/default_text.css">
@@ -19,7 +19,7 @@
     <div id="notepadDiv" contenteditable>Empty notepad...</div>
 
     <div id="topBar">
-        <select style="width: 47px;" id="fileSelect">
+        <select id="fileSelect">
             <option class="selectTitle" selected disabled>File</option>
             <optgroup label="📁 Current notepad">
                 <option value="clear">Clear</option>
@@ -28,7 +28,7 @@
                 <option value="load">Load from browser</option>
         </select>
 
-        <select style="width: 56px;" id="viewSelect">
+        <select id="viewSelect">
             <option class="selectTitle" selected disabled>View</option>
             <optgroup label="🖌 Themes">
                 <option value="darkMode">Dark (default)</option>
@@ -39,7 +39,7 @@
                 <option value="resetZoom">Reset</option>
         </select>
 
-        <select style="width: 49px;" id="editSelect">
+        <select id="editSelect">
             <option class="selectTitle" selected disabled>Edit</option>
             <optgroup label="📝 Format">
                 <option value="bold">Bold</option>
@@ -47,7 +47,7 @@
                 <option value="underline">Underline</option>
         </select>
 
-        <select style="width: 61px" id="insertSelect">
+        <select id="insertSelect">
             <option class="selectTitle" selected disabled>Insert</option>
             <optgroup label="📼 Media">
                 <option value="insertImage">Image by URL</option>
@@ -55,15 +55,13 @@
             </optgroup>
         </select>
 
-        <select style="width: 55px;" id="helpSelect">
+        <select id="helpSelect">
             <option class="selectTitle" selected disabled>Help</option>
-            <optgroup label="🌐 Websites">
-            <option value="github">Github</option>
             <optgroup label="📢 Info">
                 <option disabled>v1.0.0</option>
         </select>
     </div>
 
-    <script src="notepad.js"></script>
+    <script src="assets/scripts/notepad.js"></script>
 </body>
 </html>
