@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Notepad</title>
+    <link rel="icon" href="assets/img/icon.png">
+
+    <link rel="stylesheet" href="notepad.css">
+    
+    <!-- components -->
+    <link rel="stylesheet" href="assets/components/default_text.css">
+    <link rel="stylesheet" href="assets/components/buttons.css">
+
+    <!-- lib -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <div id="notepadDiv" contenteditable>Empty notepad...</div>
+
+    <div id="topBar">
+        <select style="width: 47px;" id="fileSelect">
+            <option class="selectTitle" selected disabled>File</option>
+            <optgroup label="📁 Current notepad">
+                <option value="clear">Clear</option>
+            <optgroup label="💾 Browser storage">
+                <option value="save">Save in browser</option>
+                <option value="load">Load from browser</option>
+        </select>
+
+        <select style="width: 56px;" id="viewSelect">
+            <option class="selectTitle" selected disabled>View</option>
+            <optgroup label="🖌 Themes">
+                <option value="darkMode">Dark (default)</option>
+                <option value="lightMode">Light</option>
+            <optgroup label="🔎 Zoom">
+                <option value="bigZoom">Big</option>
+                <option value="smallZoom">Small</option>
+                <option value="resetZoom">Reset</option>
+        </select>
+
+        <select style="width: 49px;" id="editSelect">
+            <option class="selectTitle" selected disabled>Edit</option>
+            <optgroup label="📝 Format">
+                <option value="bold">Bold</option>
+                <option value="italic">Italic</option>
+                <option value="underline">Underline</option>
+        </select>
+
+        <select style="width: 61px" id="insertSelect">
+            <option class="selectTitle" selected disabled>Insert</option>
+            <optgroup label="📼 Media">
+                <option value="insertImage">Image by URL</option>
+                <option value="insertYoutubeVideo">Youtube video by ID</option>
+            </optgroup>
+        </select>
+
+        <select style="width: 55px;" id="helpSelect">
+            <option class="selectTitle" selected disabled>Help</option>
+            <optgroup label="🌐 Websites">
+            <option value="github">Github</option>
+            <optgroup label="📢 Info">
+                <option disabled>v1.0.0</option>
+        </select>
+    </div>
+
+    <script src="notepad.js"></script>
+</body>
+</html>
