@@ -6,9 +6,6 @@ You can install the entire code from [GitHub](https://github.com/dx1dev/simpleno
 
 You can also run gh repo clone dx1dev/simplenotepad in your terminal to clone the source code.
 
-### Use web version
-Probably coming soon: you will be able to test Simple Notepad in your browser, without downloads
-
 ## ❔ About
 ### Credits
 Made by: [DX1](https://github.com/DX1Dev)<br>
